@@ -1,6 +1,8 @@
 
 class Figure:
 
+    __name = "Фигура"
+
     def __init__(self):
         pass
 

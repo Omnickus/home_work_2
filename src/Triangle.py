@@ -11,12 +11,16 @@ class Triangle(Figure):
     f - основание
     """
     
-    name = "Треугольник"
+    __name = "Треугольник"
 
     def __init__(self, h, w, f):
         self.h = h
         self.w = w
         self.f = f
+
+    @property
+    def get_name(self):
+        return self.__name
 
     def area(self):
         return 0.5 * (self.h * self.f)

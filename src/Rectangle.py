@@ -6,11 +6,15 @@ except:
 
 class Rectangle(Figure):
 
-    name = "Прямоугольник"
+    __name = "Прямоугольник"
 
     def __init__(self, width, height):
         self.width = width
         self.height = height
+
+    @property
+    def get_name(self):
+        return self.__name
 
     def area(self):
         return self.width * self.height

@@ -10,7 +10,7 @@ Triangle(h, w, f)
 """
 
 def test_name_triangle():
-    assert Triangle(1, 1, 1).name == 'Треугольник'
+    assert Triangle(1, 1, 1).get_name == 'Треугольник'
 
 def test_area_triangle():
     assert round(Triangle(1, 1, 1).area()) == round(0.5)
@@ -26,3 +26,4 @@ def test_sum_area():
     assert round(Triangle(10, 8, 4).add_area(Square(10))) == round(120)
     assert round(Triangle(10, 9, 3).add_area(Rectangle(10, 5))) == round(65)
     assert round(Triangle(10, 5, 3).add_area(Triangle(10, 5, 10))) == round(65)
+    

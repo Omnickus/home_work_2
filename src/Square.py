@@ -6,10 +6,14 @@ except:
 
 class Square(Figure):
 
-    name = "Квадрат"
+    __name = "Квадрат"
 
     def __init__(self, width):
         self.width = width
+
+    @property
+    def get_name(self):
+        return self.__name
 
     def area(self):
         return self.width * self.width
