@@ -22,8 +22,8 @@ def test_sum_area():
     assert round(Circle(10).add_area(Rectangle(10, 5))) == round(364.159)
     assert round(Circle(10).add_area(Triangle(10, 5, 10))) == round(364.159)
 
-def test_perimetr_circle_with_fixture(area_for_circle_figure):
-    assert round(area_for_circle_figure[0].perimeter) == round(area_for_circle_figure[1])
+def test_perimetr_circle_with_fixture(perimetr_for_circle_figure):
+    assert round(perimetr_for_circle_figure[0].perimeter) == round(perimetr_for_circle_figure[1])
 
 def test_broken_object_circle():
     assert Circle('2') == None
